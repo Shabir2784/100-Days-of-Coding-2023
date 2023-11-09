@@ -1,0 +1,25 @@
+package tabunganbelimotor;
+public class TabunganBeliMotor {
+
+    public static void main(String[] args) {
+        String nama_mahasiswa = "shobir";
+        int harga_motor = 23000000;
+        int penghasilan = 4000000;
+        int uang_kost = 450000;
+        int tabungan_perbulan = 2000000;
+        int lama_waktu = 0;
+        
+        while (harga_motor > 0){
+            harga_motor -= tabungan_perbulan;
+            lama_waktu++;
+        }
+        System.out.println("Nama mahasiswa: "+nama_mahasiswa);
+        System.out.println("Harga motor scoopy: "+harga_motor);
+        System.out.println("penghasilan perbulan: "+penghasilan);
+        System.out.println("Uang kost perbulan: "+uang_kost);
+        System.out.println("Uang tabungan perbulan: "+tabungan_perbulan);
+        System.out.println("Lama waktu untuk membeli motor scoopy: "+(lama_waktu)+" bulan");
+      
+    }
+    
+}
